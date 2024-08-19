@@ -5,6 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: "Pp_Neue_Machina";
+        src: url("./Pp_Neue_Machina.ttf") format("truetype");
+      }
+    </style>
   </head>
-  <body></body>
+  <body theme="salmon">
+    <div class="main w-full">
+      <div class="home section w-full h-screen relative">
+        <div
+          class="hidden vdocontent w-full h-screen absolute top-0 left-0 bg-black overflow-hidden"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            class="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            src="https://cdn.significo.com/videos/significo-main-hero.mp4"
+          ></video>
+        </div>
+        <div class="marqueesContainer w-full h-full relative">
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]"
+          >
+            <div class="row w-full flex items-center gap-5">
+              <h1 style="font-family: 'MyCustomFont';" class="semibold text-5xl">useful</h1>
+              <div
+                class="imgdiv w-[3rem] h-[3rem] bg-yellow-500 rounded-full"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
