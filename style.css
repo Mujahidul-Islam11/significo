@@ -1,9 +1,11 @@
 :root{
     --cyan: #AEDEE0;
     --dcyan: #123e47;
+    --salmon: #EF9D71;
 }
 *::selection{
-    background-color: salmon;
+    background-color: var(--salmon);
+    color: white;
 }
 body[theme="black"]{
     background-color: #000;
@@ -18,7 +20,7 @@ body[theme="cyan"] .section{
     color: var(--dcyan);
 }
 body[theme="salmon"]{
-    background-color: salmon;
+    background-color: var(--salmon);
 }
 body[theme="salmon"] .section{
     color: rgb(72, 34, 27);
