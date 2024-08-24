@@ -1,13 +1,12 @@
-function homePageAnimation() {
-  gsap.set(".rowContainer", { scale: 5 });
+
+  gsap.set(".slidesm", { scale: 5 });
 
   var tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".home",
       start: "top top",
-      end: "bottom top",
-      pin: true,
-      scrub: 3,
+      end: "bottom bottom",
+      scrub: 1,
     },
   });
   tl.to(
@@ -19,7 +18,7 @@ function homePageAnimation() {
     "a"
   )
     .to(
-      ".rowContainer",
+      ".slidesm",
       {
         scale: 1,
         ease: Power2,
@@ -44,10 +43,10 @@ function homePageAnimation() {
       },
       "b"
     );
-}
+
 gsap.to(".slide", {
   scrollTrigger: {
-    trigger: ".slide",
+    trigger: ".real",
     start: "top top",
     end: "bottom bottom",
     markers: true,
@@ -56,4 +55,3 @@ gsap.to(".slide", {
   xPercent: -200,
   ease: Power4,
 });
-homePageAnimation();
