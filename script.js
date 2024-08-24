@@ -49,7 +49,6 @@ gsap.to(".slide", {
     trigger: ".real",
     start: "top top",
     end: "bottom bottom",
-    markers: true,
     scrub: 2,
   },
   xPercent: -200,
