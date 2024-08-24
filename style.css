@@ -1,33 +1,43 @@
-:root{
-    --cyan: #AEDEE0;
-    --dcyan: #123e47;
-    --salmon: #EF9D71;
+:root {
+  --cyan: #aedee0;
+  --dcyan: #123e47;
+  --salmon: #ef9d71;
 }
-*::selection{
-    background-color: var(--salmon);
-    color: white;
+*::selection {
+  background-color: var(--salmon);
+  color: white;
 }
-body[theme="black"]{
-    background-color: #000;
+.vdocont{
+    clip-path: circle(var(--clip) at 50% 50%);
 }
-body[theme="black"] .section{
-    color: #fff;
+body[theme="black"] {
+  background-color: #000;
 }
-body[theme="cyan"]{
-    background-color: var(--cyan);
+body[theme="black"] .section {
+  color: #fff;
 }
-body[theme="cyan"] .section{
-    color: var(--dcyan);
+body[theme="cyan"] {
+  background-color: var(--cyan);
 }
-body[theme="salmon"]{
-    background-color: var(--salmon);
+body[theme="cyan"] .section {
+  color: var(--dcyan);
 }
-body[theme="salmon"] .section{
-    color: rgb(72, 34, 27);
+body[theme="salmon"] {
+  background-color: var(--salmon);
 }
-body[theme="white"]{
-    background-color: white;
+body[theme="salmon"] .section {
+  color: rgb(72, 34, 27);
 }
-body[theme="white"] .section{
-    color: #000;
+body[theme="white"] {
+  background-color: white;
+}
+body[theme="white"] .section {
+  color: #000;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }

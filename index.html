@@ -16,14 +16,15 @@
   <body theme="black">
     <div class="main w-full">
       <div class="home section w-full h-screen relative">
-        <div class="btmText z-[5] w-52 absolute left-[3%] bottom-[7%]">
+        <div class="btmText z-[5] w-full md:w-52 absolute left-[3%] bottom-[7%]">
           <h1 class="text-lg font-[500]">
             We build big ideas. Software. Apps. Tools. For real people. Real
             lives.
           </h1>
         </div>
         <div
-          class="hidden vdocont w-full h-screen absolute top-0 left-0 bg-black overflow-hidden z-[3]"
+        style="--clip: 100%;"
+          class=" vdocont w-full h-screen absolute top-0 left-0 bg-black overflow-hidden z-[3]"
         >
           <video
             autoplay
@@ -42,10 +43,9 @@
             </h1>
           </div>
           <div
-            class="absolute scale-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]"
+            class="rowContainer absolute scale-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]"
           >
-            <div
-              class="row -translate-x-1/2 w-full flex items-center gap-10 whitespace-nowrap"
+            <div class="row lft -translate-x-1/2 w-full flex items-center gap-10 whitespace-nowrap"
             >
               <div class="elem flex items-center gap-10">
                 <h1
@@ -144,8 +144,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="row -translate-x-1/3 w-full flex items-center gap-10 whitespace-nowrap"
+            <div class="row rgt -translate-x-1/3 w-full flex items-center gap-10 whitespace-nowrap"
             >
               <div class="elem flex items-center gap-10">
                 <h1
@@ -244,8 +243,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="row -translate-x-2/3 w-full flex items-center gap-10 whitespace-nowrap"
+            <div  class="row lft -translate-x-2/3 w-full flex items-center gap-10 whitespace-nowrap"
             >
               <div class="elem flex items-center gap-10">
                 <h1
@@ -344,8 +342,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="row -translate-x-3/4 w-full flex items-center gap-10 whitespace-nowrap"
+            <div class="row rgt -translate-x-3/4 w-full flex items-center gap-10 whitespace-nowrap"
             >
               <div class="elem flex items-center gap-10">
                 <h1
@@ -472,8 +469,9 @@
             </div>
           </div>
         </div>
-        <div class="cards w-1/2 py-32 bg-red-800">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime ea
+        <div class="cards w-1/2">
+          <p class="text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime ea
           voluptatem voluptatum. Aliquid aut magni tenetur quibusdam veniam
           officia dignissimos consequuntur quam suscipit iusto dolores quis iure
           voluptatibus voluptatem alias mollitia optio, eligendi corrupti eum!
@@ -520,6 +518,7 @@
           soluta optio, dolore beatae tempora quaerat exercitationem, labore
           repudiandae consequuntur? Accusantium praesentium sapiente ex pariatur
           fugit harum eos tempore sequi?
+          </p>
         </div>
       </div>
       <div class="real w-full section">
