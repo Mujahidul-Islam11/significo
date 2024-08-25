@@ -1,4 +1,5 @@
 
+function homeAnimation(){
   gsap.set(".slidesm", { scale: 5 });
 
   var tl = gsap.timeline({
@@ -43,14 +44,21 @@
       },
       "b"
     );
+}
 
-gsap.to(".slide", {
-  scrollTrigger: {
-    trigger: ".real",
-    start: "top top",
-    end: "bottom bottom",
-    scrub: 2,
-  },
-  xPercent: -200,
-  ease: Power4,
-});
+function realPageAnimation (){
+  gsap.to(".slide", {
+    scrollTrigger: {
+      trigger: ".real",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1,
+    },
+    xPercent: -200,
+    ease: Power4,
+  });
+}
+
+
+homeAnimation();
+realPageAnimation();
