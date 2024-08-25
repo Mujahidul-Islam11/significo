@@ -59,6 +59,12 @@ function realPageAnimation (){
   });
 }
 
+document.querySelectorAll(".listItem").forEach(function(Item){
+  Item.addEventListener("mousemove", function(details){
+  })
+  Item.addEventListener("mouseleave", function(details){
+  })
+})
 
 homeAnimation();
 realPageAnimation();
