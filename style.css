@@ -3,6 +3,13 @@
   --dcyan: #123e47;
   --salmon: #ef9d71;
 }
+body{
+  transition: background-color ease-out .5s;
+  -webkit-transition: background-color ease-out .5s;
+  -moz-transition: background-color ease-out .5s;
+  -ms-transition: background-color ease-out .5s;
+  -o-transition: background-color ease-out .5s;
+}
 *::selection {
   background-color: var(--salmon);
   color: white;
