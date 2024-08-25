@@ -88,21 +88,23 @@ function teamPageAnimation() {
   });
 }
 
-document.querySelectorAll(".section").forEach(function(el){
-  ScrollTrigger.create({
-    trigger: el,
-    start: "top 50%",
-    end: "bottom 50%",
-    markers: true,
-    onEnter: function(){
-      document.body.setAttribute("theme", el.dataset.color);
-    },
-    onEnterBack: function(){
-      document.body.setAttribute("theme", el.dataset.color);
-    }
+function colorChangeAnimation(){
+  document.querySelectorAll(".section").forEach(function(el){
+    ScrollTrigger.create({
+      trigger: el,
+      start: "top 50%",
+      end: "bottom 50%",
+      onEnter: function(){
+        document.body.setAttribute("theme", el.dataset.color);
+      },
+      onEnterBack: function(){
+        document.body.setAttribute("theme", el.dataset.color);
+      }
+    })
   })
-})
+}
 
 homeAnimation();
 realPageAnimation();
 teamPageAnimation();
+colorChangeAnimation();
